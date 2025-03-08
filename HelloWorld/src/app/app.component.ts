@@ -29,8 +29,10 @@ export class AppComponent {
     const nameRegex = /^[A-Z][a-zA-Z\s]{2,}$/; 
     if (nameRegex.test(this.userName)) {
       this.nameError = "";
+      return;
     } else {
-      this.nameError = "Name is Incorrect!";
+      this.nameError ="Name is Incorrect!";
+      return;
     }
   }
 
